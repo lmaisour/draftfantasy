@@ -5,6 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-	Game.create(home: 'Clippers', away: 'Warriors')
 	
+	DailyMatchup.create()
+	Game.create(name: "Warriors @ Clippers", home: 'Clippers', away: 'Warriors', daily_matchup_id: DailyMatchup.last)
+	Team.create(team_name: 'Clippers')
+	Player.create(name: 'Chris Paul')
+	Stat.create(points: 18, rebounds: 4, assists: 6, steals: 1, blocks: 0, turnovers: 2, threes: 1)
+
+
+

@@ -3,6 +3,7 @@ class DailyMatchupsController < ApplicationController
   end
 
   def index
+  	@matchups = DailyMatchup.all
   end
   
   def show

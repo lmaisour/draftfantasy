@@ -7,8 +7,8 @@ class Stat
   field :blocks, type: Integer
   field :turnovers, type: Integer
   field :threes, type: Integer
-  field :double, type: Mongoid::Boolean
-  field :triple, type: Mongoid::Boolean
+  field :double, type: Mongoid::Boolean, default: false
+  field :triple, type: Mongoid::Boolean, default: false
 
   # belongs_to :player
   embedded_in :player

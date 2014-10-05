@@ -1,29 +1,36 @@
 Rails.application.routes.draw do
-  get 'statistics/index'
+  # get 'statistics/index'
 
-  get 'statistics/show'
+  # get 'statistics/show'
 
-  get 'statistics/new'
+  # get 'statistics/new'
 
-  get 'teams/index'
+  # get 'teams/index'
 
-  get 'teams/show'
+  # get 'teams/show'
 
-  get 'players/new'
+  # get 'players/new'
 
-  get 'players/index'
+  # get 'players/index'
 
-  get 'players/show'
+  # get 'players/show'
 
-  get 'games/new'
+  # get 'games/new'
 
-  get 'games/index'
+  # get 'games/index'
 
-  get 'games/show'
+  # get 'games/show'
 
-  get 'daily_matches/new'
+  # get 'daily_matchups/new'
 
-  get 'daily_matches/index'
+  # get 'daily_matchups/index'
+
+  # get 'daily_matches' :as 'daily_matches#index'
+
+  resources :daily_matchups
+  resources :games
+  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
