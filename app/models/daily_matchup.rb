@@ -10,5 +10,7 @@ class DailyMatchup
   field :game_name8, type: String
 
   field :todays_date, type: Date
-  has_many :games
+  # has_many :games
+
+  embeds_many :games
 end

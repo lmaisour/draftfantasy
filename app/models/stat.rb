@@ -10,6 +10,7 @@ class Stat
   field :double, type: Mongoid::Boolean
   field :triple, type: Mongoid::Boolean
 
-  belongs_to :player
+  # belongs_to :player
+  embedded_in :player
   
 end
