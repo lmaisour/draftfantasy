@@ -7,14 +7,14 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     if @game.save
-      # Handle a successful save.
+      redirect_to @game
     else
       render 'new'
     end
   end
 
   def index
-  	@game = Game.all
+  	@games = Game.all
   end
 
   def show
