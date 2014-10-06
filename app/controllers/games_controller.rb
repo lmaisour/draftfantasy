@@ -21,6 +21,10 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
   end
 
+  def game_name
+    [home, away].join(' ')
+  end 
+
 
 private
 

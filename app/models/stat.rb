@@ -1,5 +1,6 @@
 class Stat
   include Mongoid::Document
+  field :player, type: String
   field :points, type: Integer
   field :rebounds, type: Integer
   field :assists, type: Integer
@@ -10,7 +11,7 @@ class Stat
   field :double, type: Mongoid::Boolean, default: false
   field :triple, type: Mongoid::Boolean, default: false
 
-  # belongs_to :player
-  embedded_in :player
+  belongs_to :player
+  # embedded_in :player
   
 end

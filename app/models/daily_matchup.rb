@@ -1,16 +1,15 @@
 class DailyMatchup
   include Mongoid::Document
-  field :game_name1, type: String
-  field :game_name2, type: String
-  field :game_name3, type: String
-  field :game_name4, type: String
-  field :game_name5, type: String
-  field :game_name6, type: String
-  field :game_name7, type: String
-  field :game_name8, type: String
-
   field :todays_date, type: Date
+  field :game1, type: String
+  field :game2, type: String
+  field :game3, type: String
+  field :game4, type: String
+  field :game5, type: String
+  field :game6, type: String
+  field :game7, type: String
+  field :game8, type: String
+  
   has_many :games
-
   # embeds_many :games
 end

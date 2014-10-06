@@ -1,3 +1,6 @@
-<h1>Games#index</h1>
-<p>Find me in app/views/games/index.html.erb</p>
+<% @games.each do |x| %>
 
+    <%= x.home %>
+    <%= x.away %>
+<% end %>
+The game name is <%= @game_name %> <br>
