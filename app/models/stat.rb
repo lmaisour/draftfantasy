@@ -11,7 +11,7 @@ class Stat
   field :double, type: Mongoid::Boolean, default: false
   field :triple, type: Mongoid::Boolean, default: false
 
-  belongs_to :player
-  # embedded_in :player
+  # belongs_to :player
+  embedded_in :player
   
 end
